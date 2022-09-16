@@ -10,5 +10,7 @@ class MainActivity : AppCompatActivity() {
         val diViewPrinter = DiViewPrinter(this)
         diViewPrinter.viewProvider.showFloatingView()
         DiLogManager.getInstance().addPrinter(diViewPrinter)
+
+        DiLog.d("日志")
     }
 }
