@@ -1,0 +1,3 @@
+include ':di-log'
+include ':app'
+rootProject.name = "DiLog"
