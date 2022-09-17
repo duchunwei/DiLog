@@ -1,6 +1,7 @@
 # 日志打印
 # 调用方式
 ## 1. 初始化
+
  DiLogManager.init(new DiLogConfig() {
             @Override
             public JsonParser injectJsonParser() {
@@ -25,9 +26,11 @@
 
     }
 ## 2.调用
+
  DiLog.d("日志")
 
 ## 3.视图打印
+
  val diViewPrinter = DiViewPrinter(this)
  diViewPrinter.viewProvider.showFloatingView()
  DiLogManager.getInstance().addPrinter(diViewPrinter)
