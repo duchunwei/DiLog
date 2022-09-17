@@ -1,8 +1,6 @@
-# DiLog
-DiLog is a log printer.
-
+# 日志打印
 # 调用方式
-1. 初始化
+## 1. 初始化
  DiLogManager.init(new DiLogConfig() {
             @Override
             public JsonParser injectJsonParser() {
@@ -26,11 +24,10 @@ DiLog is a log printer.
         }, new DiConsolePrinter(), new DiFilePrinter(getCacheDir().getAbsolutePath(), 0));
 
     }
-
-2.调用
+## 2.调用
  DiLog.d("日志")
 
-3.视图打印
+## 3.视图打印
  val diViewPrinter = DiViewPrinter(this)
  diViewPrinter.viewProvider.showFloatingView()
  DiLogManager.getInstance().addPrinter(diViewPrinter)
