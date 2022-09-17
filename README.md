@@ -28,11 +28,11 @@ DiLog is a log printer.
     }
 
 2.调用
- DiLog.d("日志")
+  DiLog.d("日志")
 
 3.视图打印
- val diViewPrinter = DiViewPrinter(this)
- diViewPrinter.viewProvider.showFloatingView()
- DiLogManager.getInstance().addPrinter(diViewPrinter)
+  val diViewPrinter = DiViewPrinter(this)
+  diViewPrinter.viewProvider.showFloatingView()
+  DiLogManager.getInstance().addPrinter(diViewPrinter)
         
  DiLog.d("日志")
